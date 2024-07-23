@@ -1,0 +1,10 @@
+package snippet;
+
+public class Snippet {
+	public static void main(String[] args) {
+		<listeners>
+				<listener class-name="com.inetBanking.utilities.Reporting" />
+			</listeners>
+	}
+}
+

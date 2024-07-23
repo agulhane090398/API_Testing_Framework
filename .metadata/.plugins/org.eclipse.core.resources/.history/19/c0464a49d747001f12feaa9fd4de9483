@@ -1,0 +1,22 @@
+package api.payloads;
+
+import lombok.Data;
+
+/*
+ * JSON - JAVA SCRIPTOBJECT NOTATION
+ * POJO - Plain old java object
+ */
+
+@Data
+public class User {
+	int id;
+	String username;
+	String firstName;
+	String lastName;
+	String email;
+	String pasword;
+	String phone;
+	int userStatus;
+	
+
+}

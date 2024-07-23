@@ -1,0 +1,12 @@
+post_url  = https://petstore.swagger.io/v2/user;
+get_url  = https://petstore.swagger.io/v2/user/{username};
+update_url  = https://petstore.swagger.io/v2/user/{username};
+delete_url  = https://petstore.swagger.io/v2/user/{username};
+	
+#//	Store
+#//	correct below urls
+store_post_url  = https://petstore.swagger.io/v2/store;
+store_get_url  = https://petstore.swagger.io/v2/store/{username};
+store_update_url  = https://petstore.swagger.io/v2/store/{username};
+store_delete_url  = https://petstore.swagger.io/v2/store/{username};
+	
