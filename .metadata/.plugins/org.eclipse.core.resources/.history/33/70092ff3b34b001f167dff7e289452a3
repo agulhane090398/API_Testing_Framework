@@ -1,0 +1,17 @@
+package api.utilities;
+
+import java.util.Random;
+
+public enum Status {
+	COMPLETE,INPROGRESS,NOT_STARTED;
+	  //...
+
+	  private static final Status[] VALUES = values();
+	  private static final int SIZE = VALUES.length;
+	  private static final Random RANDOM = new Random();
+
+	  public static Status getRandomLetter()  {
+	    return VALUES[RANDOM.nextInt(SIZE)];
+	  }
+	
+}

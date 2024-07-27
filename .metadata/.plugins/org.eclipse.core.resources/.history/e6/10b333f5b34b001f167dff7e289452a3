@@ -1,0 +1,29 @@
+package api.test;
+
+import org.apache.logging.log4j.Logger;
+import org.testng.annotations.BeforeClass;
+
+import com.github.javafaker.Faker;
+
+import api.payloads.Store;
+import api.utilities.Status;
+
+public class StoreTest {
+
+	Faker faker;
+	Store payload;
+	public Logger logger;
+	
+	@BeforeClass
+	public void setupData() {
+		faker = new Faker();
+		payload = new Store();
+		
+		payload.setId(faker.idNumber().hashCode());
+		payload.setPetId(faker.idNumber().hashCode());
+		payload.setQuantity(faker.number().hashCode());
+		payload.setShipDate(faker.date().toString());
+		payload.setStatus(Status.getRandomStatus().toString());
+		payload.setComplete(faker.bool().bool());
+	}
+}
